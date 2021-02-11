@@ -17,9 +17,9 @@ fi
 CONFIG=$(</data/transmission/settings.json)
 
 # Defaults
-CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=\"/media/wakanda/incomplete\"")
+CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=\"/media/hdd/incomplete\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir-enabled\"=true")
-CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"/media/wakanda/downloads\"")
+CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"/media/hdd/downloads\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"rpc-whitelist-enabled\"=false")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"rpc-host-whitelist-enabled\"=false")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"bind-address-ipv4\"=\"0.0.0.0\"")
